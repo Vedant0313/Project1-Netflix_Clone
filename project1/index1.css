@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.main {
+    background-image: url(images/newbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+}
+
+.main nav {
+    /* background-color: green; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav button {
+    height: 30px;
+    width: 80px;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+nav button:first-child {
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    border-radius: 3px;
+}
+
+nav button:nth-child(2) {
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    line-height: 2.7;
+}
+
+.hero> :first-child {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero input {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.58);
+    color: white;
+}
+
+.hero button {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 3px;
+}
+
+.hero button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.first {
+    height: 60vh;
+    width: 100%;
+    /* background-color: rgba(0, 128, 0, 0.253); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.firstpara {
+    width: 37vw;
+    line-height: 1.5;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first .firstpara>:first-child {
+    font-size: 50px;
+    font-weight: 900;
+    /* color: green; */
+    padding: 34px;
+}
+
+.first .firstpara>:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+    /* color: rgb(128, 0, 0); */
+}
+
+.tv {
+    position: relative;
+}
+
+.first .tv img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.first .tv video {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+
+}
+
+
+
+.second {
+    height: 60vh;
+    /* background-color: rgba(0, 128, 0, 0.288); */
+    height: 60vh;
+    width: 100%;
+    /* background-color: rgba(0, 128, 0, 0.253); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.second .firstpara>:first-child {
+    font-size: 50px;
+    font-weight: 900;
+    /* color: green; */
+}
+
+.second .firstpara>:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+    /* color: rgb(128, 0, 0); */
+}
+
+.tv {
+    position: relative;
+}
+
+.second .tv img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.second .tv video {
+    position: absolute;
+    width: 22vw;
+    top: 55px;
+    right: 120px;
+}
+
+
+.seperation {
+    height: 8px;
+    width: 100%;
+    background-color: rgba(46, 46, 46, 0.74);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vw;
+    width: 70vw;
+    margin: auto;
+}
+
+.footer_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_items a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 500px) {
+
+    .main {
+        /* background-image: url(images/newbg.jpg); */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* height: 80vh; */
+        height: 500px;
+        width: 932px;
+        position: relative;
+    }
+
+    .main .box {
+        height: 500px;
+        width: 100%;
+        background-color: black;
+        opacity: 0.44;
+        position: absolute;
+        top: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        /* margin: auto; */
+        width: 400px;
+        justify-content: space-between;
+        /* height: 60px; */
+        position: relative;
+        z-index: 10;
+    }
+
+    .first {
+        /* background-color: rgba(255, 0, 0, 0.217); */
+        height: 1000px;
+        width: 932px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .firstpara {
+        /* background-color: rgba(172, 255, 47, 0.267); */
+        width: 500px;
+        /* height: 300px; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .first .firstpara>:first-child {
+        font-size: 35px;
+        font-weight: 700;
+        align-items: start;
+    }
+
+    .first .firstpara>:nth-child(2) {
+        font-size: 20px;
+        font-weight: 500;
+        /* background-color: blue; */
+        width: 400px;
+    }
+
+    .second {
+        /* background-color: rgba(172, 255, 47, 0.267); */
+        width: 932px;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .second .firstpara>:first-child {
+        font-size: 35px;
+        font-weight: 700;
+        align-items: start;
+    }
+
+    .second .firstpara>:nth-child(2) {
+        font-size: 20px;
+        font-weight: 500;
+        /* background-color: blue; */
+        width: 400px;
+    }
+
+    .second .tv video {
+        position: absolute;
+        width: 320px;
+        top: 50px;
+        right: 120px;
+    }
+
+    .second .tv img {
+        width: 555px;
+        position: relative;
+        z-index: 10;
+        /* background-color: red; */
+    }
+
+    .seperation{
+        width: 932px;
+    }
+
+    footer{
+        /* background-color: red; */
+        height: 500px;
+        width: 932px;
+    }
+}
